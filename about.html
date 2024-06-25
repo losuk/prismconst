@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Prism Construction</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+<body>
+
+   <!-- <style>
+      button .btn {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 15px 20px; /* Some padding */
+            border: none; /* Remove borders */
+            cursor: pointer; /* Pointer/hand icon */
+            width: 100%; /* Full width */
+            opacity: 0.9; /* Slightly transparent */
+            font-size: 16px; /* Increase font size */
+        }
+
+        .btn:hover {
+            opacity: 1; /* Fully opaque on hover */
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .box {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        .box:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        label {
+            margin-left: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            button .btn {
+                font-size: 14px; /* Reduce font size */
+                padding: 12px 16px; /* Adjust padding */
+            }
+        }
+   </style> -->
+   
+<!-- header section starts  -->
+
+<header class="header">
+
+   <a href="index.html" class="logo"><img src="images/logo.png" alt="Prism Construction Logo" style="width: 100px;"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+   <nav class="navbar">
+      <a href="index.html">home</a>
+      <a href="about.html"><strong>about</strong></a>
+      <a href="services.html">services</a>
+      <a href="projects.html">projects</a>
+      <a href="contact.html">contact</a>
+   </nav>
+
+   <div class="icons">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div id="info-btn" class="fas fa-info-circle"></div>
+      <div id="search-btn" class="fas fa-search"></div>
+      <div id="login-btn" class="fas fa-user"></div>
+   </div>
+
+<!-- <script>
+   // Mock user data for demonstration
+   let currentUser = null;
+
+   // Function to handle login
+   function login(event) {
+       event.preventDefault(); // Prevent form submission
+       let email = document.getElementById('email').value;
+       let password = document.getElementById('password').value;
+       let rememberMe = document.getElementById('remember-me').checked;
+
+       // Mocking a login check (replace with actual authentication logic)
+       if (email === 'info@prismconst.com' && password === 'prism') {
+           currentUser = { name: 'User', email: email };
+
+           if (rememberMe) {
+               localStorage.setItem('currentUser', JSON.stringify(currentUser));
+           }
+
+           updateUI();
+       } else {
+           alert('Invalid credentials. Please try again.');
+       }
+   }
+
+   // Function to handle logout
+   function logout() {
+       currentUser = null;
+       localStorage.removeItem('currentUser');
+       updateUI();
+   }
+
+   // Function to update UI based on login state
+   function updateUI() {
+       let welcomeMessage = document.getElementById('welcome-message');
+       let logoutBtn = document.getElementById('logout-btn');
+       let loginForm = document.getElementById('login-form');
+
+       if (currentUser) {
+           welcomeMessage.textContent = `Welcome, ${currentUser.name}`;
+           logoutBtn.style.display = 'block';
+           loginForm.style.display = 'none';
+       } else {
+           welcomeMessage.textContent = '';
+           logoutBtn.style.display = 'none';
+           loginForm.style.display = 'block';
+       }
+   }
+
+   // Check localStorage for saved user on page load
+   window.onload = function() {
+       let savedUser = localStorage.getItem('currentUser');
+       if (savedUser) {
+           currentUser = JSON.parse(savedUser);
+       }
+       updateUI();
+   };
+
+   // Event listener for login form submission
+   document.getElementById('login-form').addEventListener('submit', login);
+</script>
+
+         
+   </form> -->
+   
+
+</header>
+
+<div class="contact-info">
+
+   <div id="close-contact-info" class="fas fa-times"></div>
+
+   <div class="info">
+      <i class="fas fa-phone"></i>
+      <h3>phone number</h3>
+      <p>+256 393 208 828</p>
+   </div>
+
+   <div class="info">
+      <i class="fas fa-envelope"></i>
+      <h3>email address</h3>
+      <p>info@prismconst.com</p>
+   </div>
+
+   <div class="info">
+      <i class="fas fa-map-marker-alt"></i>
+      <h3>office address</h3>
+      <p>8th Floor, Communications House</p>
+   </div>
+
+   <div class="share">
+      <a href="#" class="fab fa-facebook-f"></a>
+      <a href="#" class="fab fa-twitter"></a>
+      <a href="#" class="fab fa-instagram"></a>
+      <a href="#" class="fab fa-linkedin"></a>
+   </div>
+
+</div>
+
+<!-- header section ends -->
+<section class="home" id="home">
+
+    <div class="">
+ 
+       <div class="">
+          <section class="" style="background: grey; width: 100%; height: 300px;">
+             <div class="content" style="text-align: center; justify-content: center; margin-top: 10%; font-size: 25px; color: rgb(48, 48, 173);">
+                <a href="index.html" style="color: orange;">Home</a> / <a href="about.html" style="color: orange;">About</a>
+             </div>
+          </section><br>
+          <section class="about" id="about">
+
+            <h1 class="heading"> about us </h1>
+         
+            <div class="row">
+         
+               <div class="video">
+                  <img src="images/img-about.jpg" alt="about-image">
+               </div>
+         
+               <div class="content">
+                  <h3>WHO WE ARE</h3>
+                  <p>Prism Construction is a dynamic, brisk company whose expertise lies in managing the construction process for renovating or building new facilities from the Healthcare to Commercial and Industrial markets
+                     Our company thrives on innovation, continuous improvement, best practices, dynamic and forward thinking while delivering professional services.</p>
+                  <a href="services.html" class="btn">read more</a>
+               </div>
+         
+            </div>
+         
+            <div class="box-container">
+         
+               <div class="box">
+                  <h3>20+</h3>
+                  <p>years of experience</p>
+               </div>
+         
+               <div class="box">
+                  <h3>30+</h3>
+                  <p>project completed</p>
+               </div>
+         
+               <div class="box">
+                  <h3>30+</h3>
+                  <p>satiesfied clients</p>
+               </div>
+         
+            </div>
+         
+         </section>
+         
+         <!-- about section ends -->
+
+         <!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact us </h1>
+ 
+    <div class="row">
+ 
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7586035534537!2d32.58436499999999!3d0.31348000000000065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbc7e4f20636d%3A0xa66968858c80cb34!2sCommunication+House!5e0!3m2!1sen!2sug!4v1412948177075"></iframe>
+ 
+       <form action="https://formsubmit.co/info@prismconst.com" method="POST">
+          <h3>get in touch</h3>
+          <input type="text" placeholder="Name" name="name" class="box" required>
+          <input type="email" placeholder="Email" name="email" class="box" required>
+          <input type="number" placeholder="Phone" name="phone" class="box">
+          <textarea name="" placeholder="Message" name="message" class="box" id="" cols="30" rows="10" required></textarea>
+          <input type="submit" value="Send Message" class="btn">
+       </form>
+ 
+    </div>
+ 
+ </section>
+<!-- contact section ends --> 
+ <!-- footer section starts  -->
+  <hr style="color: gray;">
+
+<section class="footer">
+
+    <div class="links">
+       <a class="btn" href="index.html">Home</a>
+       <a class="btn" href="about.html">About</a>
+       <a class="btn" href="services.html">Services</a>
+       <a class="btn" href="projects.html">Projects</a>
+       <a class="btn" href="contact.html">Contact</a>
+    </div>
+ 
+    <div class="credit"> &copy; <span>Prism Construction</span> | all rights reserved! </div>
+ 
+ </section>
+ 
+ <!-- footer section ends -->
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+ 
+ <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+ 
+ <!-- custom js file link  -->
+ <script src="js/script.js"></script>
+ 
+ <script>
+ 
+ lightGallery(document.querySelector('.projects .box-container'));
+ 
+ </script>
+ 
+ </body>
+ </html>
